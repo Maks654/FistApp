@@ -3,7 +3,7 @@ import java.util.Scanner;
 import static java.lang.Integer.parseInt;
 
 public class array {
-    public static void main(String[] args) {
+    public static void Array(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите количество строк");
         int A = scanner.nextInt();
@@ -30,9 +30,7 @@ public class array {
                 System.out.println("=" + sum);
             }
             System.out.println();
-        /*Scanner scanner1 = new Scanner(System.in);
-        int a = parseInt(scanner1.nextLine());
-        System.out.println(a);*/
+
         }
 
 
