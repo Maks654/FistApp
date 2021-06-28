@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class BeerSong {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите количество бутылок: ");
-        int beerNum = scanner.nextInt();
+        int beerNum = (int) (Math.random() * 100);
         int beerSum;
         String word = "бутылок (бутылки)";
         while (true) {
