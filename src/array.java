@@ -1,10 +1,10 @@
 import java.util.Scanner;
-
-import static java.lang.Integer.parseInt;
-
+/* данный класс создает зубчатый массив  и заполняет его значениями
+ после чего высчитывает сумму всех строк и общую сумму
+ */
 public class array {
     int sum = 0;
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         int sum = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите количество строк");
