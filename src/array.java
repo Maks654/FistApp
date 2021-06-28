@@ -35,7 +35,6 @@ public class array {
             }
         System.out.println("Сумма всех ячеек = " + sum);
         System.out.println();
-
         }
 
 

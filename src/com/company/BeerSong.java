@@ -6,7 +6,7 @@ public class BeerSong {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int beerNum = (int) (Math.random() * 100);
-        int beerSum;
+        byte beerSum;
         String word = "бутылок (бутылки)";
         while (true) {
             if (beerNum == 1) {
@@ -20,7 +20,7 @@ public class BeerSong {
                 return;
             }
             System.out.println("Какое количество пива возьмешь?");
-            beerSum = scanner.nextInt();
+            beerSum = scanner.nextByte();
             beerNum = beerNum - beerSum;
             if (beerNum < 0) {
                 System.out.println("Ты не можешь взять больше чем есть!");
