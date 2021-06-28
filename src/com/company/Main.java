@@ -1,5 +1,5 @@
 package com.company;
-
+//данный класс высчитывает периметр многоугольника
 
 import java.util.Scanner;
 

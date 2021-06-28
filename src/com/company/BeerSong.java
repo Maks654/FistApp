@@ -9,23 +9,25 @@ public class BeerSong {
         int beerNum = scanner.nextInt();
         int beerSum;
         String word = "бутылок (бутылки)";
-        while (beerNum >= 0) {
+        while (true) {
             if (beerNum == 1) {
-                word = "Бутылка";
+                word = "бутылка";
             }
-            System.out.println(beerNum + " " + word + " пива на стене");
-            System.out.println(beerNum + " " + word + " пива");
-            System.out.println("какое количество пива возьмешь?");
-            beerSum = scanner.nextInt();
-            beerNum = beerNum - beerSum;
             if (beerNum > 0){
                 System.out.println(beerNum + " " + word + " пива на стене");
             }
             else {
                 System.out.println("Нет пива на стене");
+                return;
+            }
+            System.out.println("Какое количество пива возьмешь?");
+            beerSum = scanner.nextInt();
+            beerNum = beerNum - beerSum;
+            if (beerNum < 0) {
+                System.out.println("Ты не можешь взять больше чем есть!");
+                beerNum = beerNum + beerSum;
             }
         }
-
 
     }
 
